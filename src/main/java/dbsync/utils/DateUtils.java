@@ -19,7 +19,7 @@ import java.util.TimeZone;
 /**
  * 自定义时间日期工具
  * 
- * @author liuyazhuang
+ * @author zhaonan
  * 
  */
 public class DateUtils {

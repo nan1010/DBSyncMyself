@@ -13,7 +13,6 @@ import dbsync.utils.DateUtils;
  * @version 1.0.0
  */
 public class Main {
-
 	private static Logger logger = Logger.getLogger(Task.class);
 
 	public static void main(String[] args) {

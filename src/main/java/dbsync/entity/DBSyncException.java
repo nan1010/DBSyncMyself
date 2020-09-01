@@ -1,13 +1,14 @@
-/**
- * 
- */
 package dbsync.entity;
 
 /**
- * @author 0380009503
- *
+ * @author zhaonan
+ * @date 2020/9/1 15:30
+ * @description 异常处理类
+ * @version 1.0.0
  */
+
 public class DBSyncException extends RuntimeException {
+
 	private static final long serialVersionUID = 1L;
 
 	/**

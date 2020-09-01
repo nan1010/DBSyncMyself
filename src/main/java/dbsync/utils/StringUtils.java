@@ -16,10 +16,8 @@
 package dbsync.utils;
 
 /**
- * @author liuyazhuang
- * @date 2018/9/11 10:27
+ * @author zhaonan
  * @description 字符串工具类
- * @version 1.0.0
  */
 public class StringUtils {
 

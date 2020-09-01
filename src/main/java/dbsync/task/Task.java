@@ -1,6 +1,3 @@
-/**
- * 
- */
 package dbsync.task;
 
 import java.lang.reflect.Field;
@@ -29,11 +26,12 @@ import dbsync.utils.StringUtils;
 import dbsync.utils.Tool;
 
 /**
- * @author liuyazhuang
- * @date 2018/9/11 10:08
- * @description 同步数据库数据的Builder对象
+ * @author zhaonan
+ * @date 2020/9/1 15:30
+ * @description 初始化、数据同步、源数据删除
  * @version 1.0.0
  */
+
 public class Task {
 
 	private DBInfo srcDb;
@@ -109,21 +107,18 @@ public class Task {
 	}
 
 	/**
-	 * 启动定时任务，同步数据库的数据
+	 * 执行数据同步，成功后删除源数据
 	 */
 	public void start() {
 		for (int index = 0; index < jobList.size();) {
 			JobInfo jobInfo = jobList.get(index);
 			String logTitle = "[" + code + "]" + jobInfo.getName() + " ";
 			logger.info(jobInfo.getCron());
+			// 每隔一秒循环执行
 			while (true) {
 				try {
 					Thread.sleep(1000);
-					/**
-					 * 执行同步数据库任务
-					 *
-					 */
-					Task.logger.info("开始任务执行: {}");
+					Task.logger.info("开始任务执行: ");
 					Connection inConn = null;
 					Connection outConn = null;
 					try {
@@ -154,12 +149,7 @@ public class Task {
 					e.printStackTrace();
 				}
 			}
-
 		}
-	}
-
-	public void doJob() {
-
 	}
 
 	/**
@@ -190,13 +180,14 @@ public class Task {
 			if (conn != null) {
 				conn.close();
 				conn = null;
-				Task.logger.error("数据库连接关闭");
+				Task.logger.error("连接已关闭");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 
+	// 拼凑SQL语句，执行同步后删除源数据
 	public String assembleAndExcuteSQLAndDelete(Connection inConn, Connection outConn, JobInfo jobInfo)
 			throws SQLException {
 		String uniqueName = Tool.generateString(6) + "_" + jobInfo.getName();
@@ -261,10 +252,9 @@ public class Task {
 			logger.debug(sql.toString());
 		}
 		return destTableKey;
-
 	}
 
-	// 执行SQL语句
+	// 执行SQL语句，删除源数据
 	public void executeAndDeleteSQL(String sql, Connection inConn, Connection outConn, boolean flag)
 			throws SQLException {
 		PreparedStatement pst1 = outConn.prepareStatement("");
