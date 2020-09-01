@@ -1,7 +1,7 @@
 /**
  * 
  */
-package dbsync.exception;
+package dbsync.entity;
 
 /**
  * @author 0380009503
