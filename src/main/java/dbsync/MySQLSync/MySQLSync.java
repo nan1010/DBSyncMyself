@@ -42,7 +42,7 @@ public class MySQLSync {
 		updateFields = this.trimArrayItem(updateFields);
 		String destTable = jobInfo.getDestTable();
 		String destTableKey = jobInfo.getDestTableKey();
-		while (true) {
+		
 			PreparedStatement pst = inConn.prepareStatement(srcSql);
 			ResultSet rs = pst.executeQuery();
 			StringBuilder sql = new StringBuilder();
@@ -89,7 +89,8 @@ public class MySQLSync {
 				}
 				logger.debug(sql.toString());
 			}
-		}
+			return destTableKey;
+		
 	}
 
 	// 执行SQL语句

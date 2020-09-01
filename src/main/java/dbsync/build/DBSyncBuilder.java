@@ -110,7 +110,16 @@ public class DBSyncBuilder {
 			job.getJobDataMap().put("jobInfo", jobInfo);
 			job.getJobDataMap().put("logTitle", logTitle);
 			logger.info(jobInfo.getCron());
-			job.run();
+			while(true) {
+				try {
+					Thread.sleep(1000);
+					job.run();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}			
+			}
+			
 		}
 	}
 }
