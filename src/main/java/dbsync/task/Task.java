@@ -18,9 +18,7 @@ import org.apache.log4j.Logger;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import dbsync.entity.Constants;
 import dbsync.entity.DBInfo;
-import dbsync.entity.DBSyncException;
 import dbsync.entity.JobInfo;
 
 /**
@@ -95,8 +93,8 @@ public class Task {
 		for (int index = 0; index < fields.length; index++) {
 			Field item = fields[index];
 			// 当前字段不是serialVersionUID，同时当前字段不包含serialVersionUID
-			if (!Constants.FIELD_SERIALVERSIONUID.equals(item.getName())
-					&& !item.getName().contains(Constants.FIELD_SERIALVERSIONUID)) {
+			if (!"serialVersionUID".equals(item.getName())
+					&& !item.getName().contains("serialVersionUID")) {
 				item.setAccessible(true);
 				item.set(o, e.element(item.getName()).getTextTrim());
 			}
@@ -135,7 +133,7 @@ public class Task {
 					} catch (SQLException e) {
 						Task.logger.error(logTitle + e.getMessage());
 						Task.logger.error(logTitle + " SQL执行出错，请检查是否存在语法错误");
-						throw new DBSyncException(logTitle + e.getMessage());
+						throw new RuntimeException(logTitle + e.getMessage());
 					} finally {
 						Task.logger.info("关闭源数据库连接");
 						destoryConnection(inConn);
@@ -189,16 +187,16 @@ public class Task {
 	public String assembleAndExcuteSQLAndDelete(Connection inConn, Connection outConn, JobInfo jobInfo)
 			throws SQLException {
 		String uniqueName = generateString(6) + "_" + jobInfo.getName();
-		String[] destFields = jobInfo.getDestTableFields().split(Constants.FIELD_SPLIT);
+		String[] destFields = jobInfo.getDestTableFields().split(",");
 		destFields = this.trimArrayItem(destFields);
 		// 默认的srcFields数组与destFields相同
 		String[] srcFields = destFields;
 		String srcField = jobInfo.getSrcTableFields();
 		if (!isEmpty(srcField)) {
-			srcFields = this.trimArrayItem(srcField.split(Constants.FIELD_SPLIT));
+			srcFields = this.trimArrayItem(srcField.split(","));
 		}
 		Map<String, String> fieldMapper = this.getFieldsMapper(srcFields, destFields);
-		String[] updateFields = jobInfo.getDestTableUpdate().split(Constants.FIELD_SPLIT);
+		String[] updateFields = jobInfo.getDestTableUpdate().split(",");
 		updateFields = this.trimArrayItem(updateFields);
 		String destTable = jobInfo.getDestTable();
 		String destTableKey = jobInfo.getDestTableKey();
@@ -305,7 +303,7 @@ public class Task {
 	 */
 	private Map<String, String> getFieldsMapper(String[] srcFields, String[] destFields) {
 		if (srcFields.length != destFields.length) {
-			throw new DBSyncException("源数据库与目标数据库的字段必须一一对应");
+			throw new RuntimeException("源数据库与目标数据库的字段必须一一对应");
 		}
 		Map<String, String> map = new HashMap<>();
 		for (int i = 0; i < srcFields.length; i++) {
@@ -337,4 +335,5 @@ public class Task {
 	public static boolean isEmpty(String str) {
 		return str == null || "".equals(str.trim());
 	}
+	
 }
