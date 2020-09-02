@@ -1,10 +1,11 @@
 package dbsync;
 
+import java.text.DateFormat;
 import java.util.Date;
+
 import org.apache.log4j.Logger;
 
 import dbsync.task.Task;
-import dbsync.utils.DateUtils;
 
 /**
  * @author 赵楠
@@ -16,10 +17,7 @@ public class Main {
 	private static Logger logger = Logger.getLogger(Task.class);
 
 	public static void main(String[] args) {
-		logger.info("同步数据开始===>>>" + DateUtils.parseDateToString(new Date(), DateUtils.DATE_TIME_FORMAT));
-		// System.out.println("1333");
+		logger.info("同步数据开始===>>>" + DateFormat.getDateInstance(0).format(new Date()).toString());
 		Task.builder().init().start();
-		logger.info("同步数据结束===>>>" + DateUtils.parseDateToString(new Date(), DateUtils.DATE_TIME_FORMAT));
-		// System.out.println("1222222");
-	}
+		logger.info("同步数据结束===>>>" + DateFormat.getDateInstance(0).format(new Date()).toString());	}
 }

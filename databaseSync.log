@@ -21470,3 +21470,289 @@
 2020-09-01 03:48:00:ERROR main dbsync.task.Task - 连接已关闭
 2020-09-01 03:48:00:INFO main dbsync.task.Task - 关闭目标数据库连接
 2020-09-01 03:48:00:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:02:12:INFO main dbsync.task.Task - java.text.SimpleDateFormat@be3eaf08
+2020-09-02 03:02:54:INFO main dbsync.task.Task - 2020年9月2日 星期三
+2020-09-02 03:03:24:INFO main dbsync.task.Task - 同步数据开始===>>>2020年9月2日 星期三
+2020-09-02 03:03:24:INFO main dbsync.task.Task - 0/5 * * * * ?
+2020-09-02 03:03:25:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:25:INFO main dbsync.task.Task - 执行耗时: 12ms
+2020-09-02 03:03:25:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:25:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:25:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:25:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:26:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:26:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:26:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:26:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:26:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:26:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:27:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:27:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:27:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:27:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:27:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:27:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:28:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:28:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:28:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:28:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:28:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:28:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:29:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:29:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:29:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:29:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:29:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:29:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:30:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:30:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:30:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:30:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:30:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:30:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:31:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:31:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:31:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:31:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:31:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:31:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:32:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:32:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:32:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:32:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:32:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:32:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:33:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:33:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:03:33:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:33:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:33:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:33:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:34:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:34:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:34:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:34:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:34:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:34:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:35:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:35:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:35:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:35:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:35:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:35:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:36:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:37:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:37:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:37:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:37:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:37:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:38:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:38:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:38:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:38:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:38:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:38:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:39:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:39:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:39:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:39:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:39:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:39:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:40:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:40:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:03:40:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:40:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:40:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:40:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:41:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:41:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:41:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:41:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:41:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:41:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:42:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:42:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:42:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:42:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:42:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:42:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:43:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:43:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:43:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:43:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:43:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:43:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:44:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:44:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:44:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:44:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:44:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:44:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:45:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:45:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:45:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:45:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:45:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:45:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:46:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:46:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:46:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:46:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:46:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:46:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:47:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:47:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:47:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:47:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:47:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:47:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:48:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:48:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:48:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:48:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:48:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:48:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:49:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:49:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:49:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:49:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:49:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:49:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:50:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:50:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:50:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:50:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:50:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:50:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:51:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:51:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:51:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:51:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:51:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:51:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:52:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:52:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:52:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:52:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:52:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:52:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:53:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:53:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:53:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:53:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:53:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:53:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:54:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:54:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:54:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:54:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:54:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:54:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:55:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:55:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:55:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:55:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:55:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:55:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:56:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:56:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:56:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:56:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:56:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:56:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:57:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:57:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:03:57:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:57:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:57:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:57:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:58:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:58:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:58:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:58:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:58:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:03:58:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:03:59:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:03:59:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:03:59:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:03:59:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:00:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:00:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:01:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:01:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:04:01:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:01:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:01:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:01:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:02:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:02:INFO main dbsync.task.Task - 执行耗时: 2ms
+2020-09-02 03:04:02:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:02:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:02:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:02:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:03:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:03:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:04:03:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:03:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:03:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:03:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:04:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:04:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:04:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:04:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:04:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:04:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:05:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:05:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:05:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:05:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:05:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:05:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:06:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:06:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:06:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:06:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:06:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:06:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:07:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:07:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:07:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:07:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:07:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:07:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:08:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:08:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:04:08:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:08:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:08:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:08:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:09:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:09:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:09:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:09:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:09:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:09:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:10:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:10:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:10:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:10:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:10:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:10:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:11:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:11:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:04:11:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:11:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:11:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:11:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:12:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:12:INFO main dbsync.task.Task - 执行耗时: 0ms
+2020-09-02 03:04:12:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:12:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:12:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:12:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:13:INFO main dbsync.task.Task - 开始任务执行: 
+2020-09-02 03:04:13:INFO main dbsync.task.Task - 执行耗时: 1ms
+2020-09-02 03:04:13:INFO main dbsync.task.Task - 关闭源数据库连接
+2020-09-02 03:04:13:ERROR main dbsync.task.Task - 连接已关闭
+2020-09-02 03:04:13:INFO main dbsync.task.Task - 关闭目标数据库连接
+2020-09-02 03:04:13:ERROR main dbsync.task.Task - 连接已关闭

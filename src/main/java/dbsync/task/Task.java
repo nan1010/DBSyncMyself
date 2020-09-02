@@ -22,8 +22,6 @@ import dbsync.entity.Constants;
 import dbsync.entity.DBInfo;
 import dbsync.entity.DBSyncException;
 import dbsync.entity.JobInfo;
-import dbsync.utils.StringUtils;
-import dbsync.utils.Tool;
 
 /**
  * @author zhaonan
@@ -190,13 +188,13 @@ public class Task {
 	// 拼凑SQL语句，执行同步后删除源数据
 	public String assembleAndExcuteSQLAndDelete(Connection inConn, Connection outConn, JobInfo jobInfo)
 			throws SQLException {
-		String uniqueName = Tool.generateString(6) + "_" + jobInfo.getName();
+		String uniqueName = generateString(6) + "_" + jobInfo.getName();
 		String[] destFields = jobInfo.getDestTableFields().split(Constants.FIELD_SPLIT);
 		destFields = this.trimArrayItem(destFields);
 		// 默认的srcFields数组与destFields相同
 		String[] srcFields = destFields;
 		String srcField = jobInfo.getSrcTableFields();
-		if (!StringUtils.isEmpty(srcField)) {
+		if (!isEmpty(srcField)) {
 			srcFields = this.trimArrayItem(srcField.split(Constants.FIELD_SPLIT));
 		}
 		Map<String, String> fieldMapper = this.getFieldsMapper(srcFields, destFields);
@@ -232,8 +230,8 @@ public class Task {
 		}
 		if (count > 0) {
 			sql = sql.deleteCharAt(sql.length() - 1);
-			if ((!StringUtils.isEmpty(jobInfo.getDestTableUpdate()))
-					&& (!StringUtils.isEmpty(jobInfo.getDestTableKey()))) {
+			if ((!isEmpty(jobInfo.getDestTableUpdate()))
+					&& (!isEmpty(jobInfo.getDestTableKey()))) {
 				sql.append(" on duplicate key update ");
 				for (int index = 0; index < updateFields.length; index++) {
 					sql.append(updateFields[index]).append("= values(").append(updateFields[index])
@@ -314,5 +312,29 @@ public class Task {
 			map.put(destFields[i].trim(), srcFields[i].trim());
 		}
 		return map;
+	}
+	
+	/**
+	 * 产生随机字符串
+	 * 
+	 * @param length 字符串的长度
+	 * @return 随机的字符串
+	 */
+	public static String generateString(int length) {
+		if (length < 1)
+			length = 6;
+		String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String genStr = "";
+		for (int index = 0; index < length; index++) {
+			genStr = genStr + str.charAt((int) ((Math.random() * 100) % 26));
+		}
+		return genStr;
+	}
+	
+	/**
+	 * @description 字符串工具类
+	 */
+	public static boolean isEmpty(String str) {
+		return str == null || "".equals(str.trim());
 	}
 }
