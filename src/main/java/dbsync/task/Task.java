@@ -204,6 +204,8 @@ public class Task {
 		PreparedStatement pst = inConn.prepareStatement(jobInfo.getSrcSql());
 		ResultSet rs = pst.executeQuery();
 		StringBuilder sql = new StringBuilder();
+		StringBuilder delSql = new StringBuilder();
+
 		sql.append("insert into ").append(destTable).append(" (").append(jobInfo.getDestTableFields())
 				.append(") values ");
 		boolean flag = true;
@@ -212,10 +214,13 @@ public class Task {
 			if (!rs.next()) {
 				flag = false;
 				break;
-			}
+			}	
 			sql.append("(");
-			for (int index = 0; index < destFields.length; index++) {
+			for (int index = 0; index < destFields.length; index++) {				
 				Object fieldValue = rs.getObject(fieldMapper.get(destFields[index].trim()));
+				if(index == 0) {
+					delSql.append(fieldValue).append(",");
+				}
 				if (fieldValue == null) {
 					sql.append(fieldValue).append(index == (destFields.length - 1) ? "" : ",");
 				} else {
@@ -238,7 +243,7 @@ public class Task {
 				String newSql = new StringBuffer("alter table ").append(destTable).append(" add constraint ")
 						.append(uniqueName).append(" unique (").append(destTableKey).append(");").append(sql.toString())
 						.append(";alter table ").append(destTable).append(" drop index ").append(uniqueName).toString();
-				executeAndDeleteSQL(newSql, inConn, outConn, flag);
+				executeAndDeleteSQL(newSql, inConn, outConn, flag, delSql);
 				if (!rs.next()) {
 					pst.close();
 					rs.close();
@@ -251,30 +256,33 @@ public class Task {
 	}
 
 	// 执行SQL语句，删除源数据
-	public void executeAndDeleteSQL(String sql, Connection inConn, Connection outConn, boolean flag)
+	public void executeAndDeleteSQL(String sql, Connection inConn, Connection outConn, boolean flag, StringBuilder delSql)
 			throws SQLException {
 		PreparedStatement pst1 = outConn.prepareStatement("");
-		PreparedStatement pst2 = outConn.prepareStatement("select id from t_user");
+		//PreparedStatement pst2 = outConn.prepareStatement("select id from t_user");
 		Statement statement = inConn.createStatement();
-		StringBuilder delSql = new StringBuilder();
+		//StringBuilder delSql = new StringBuilder();
 		String[] sqlList = sql.split(";");
 		for (int index = 0; index < sqlList.length; index++) {
 			pst1.addBatch(sqlList[index]);
 		}
-		pst1.executeBatch();
-		ResultSet resultSet = pst2.executeQuery();
+		pst1.executeBatch();		
+		//ResultSet resultSet = pst2.executeQuery();
 
-		while (resultSet.next()) {
-			delSql.append(resultSet.getInt("id")).append(",");
-		}
-		delSql = delSql.deleteCharAt(delSql.length() - 1);
+		/*
+		 * while (resultSet.next()) { delSql.append(resultSet.getInt("id")).append(",");
+		 * } delSql = delSql.deleteCharAt(delSql.length() - 1);
+		 */
+		 
+		
 		if (!flag) {
 			statement.executeUpdate("delete from t_user");
 			Task.logger.info("源数据全部删除完毕！");
 		} else {
-
-			statement.executeUpdate("delete from t_user where id in " + "(" + delSql + ")");
-			Task.logger.info("delete from t_user where id in " + "(" + delSql + ")");
+			
+			delSql.deleteCharAt(delSql.length() - 1);
+			statement.executeUpdate("delete from t_user where id in " + "(" + delSql.toString() + ")");
+			Task.logger.info("delete from t_user where id in " + "(" + delSql.toString() + ")");
 		}
 		statement.close();
 		outConn.commit();
